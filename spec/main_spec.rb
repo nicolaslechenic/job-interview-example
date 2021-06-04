@@ -1,5 +1,5 @@
 require "spec_helper"
-require 'fileutils'
+require "fileutils"
 require_relative "../main.rb"
 
 RSpec.describe "main file" do

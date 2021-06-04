@@ -21,7 +21,7 @@ rentals_hash = []
 
 rentals.each do |rental|
   car = find_car(cars, rental["car_id"])
-  time_price = time_price(rental["start_date"], rental["end_date"], car["price_per_day"] )
+  time_price = time_price(rental["start_date"], rental["end_date"], car["price_per_day"])
   total = time_price + (rental["distance"] * car["price_per_km"])
 
   rentals_hash << { "id" => rental["id"], "price" => total }
